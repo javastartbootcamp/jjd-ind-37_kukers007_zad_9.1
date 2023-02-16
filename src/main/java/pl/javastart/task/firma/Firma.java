@@ -2,8 +2,8 @@ package pl.javastart.task.firma;
 
 import pl.javastart.task.firma.finanse.Koszt;
 import pl.javastart.task.firma.finanse.Przychod;
+import pl.javastart.task.firma.finanse.Rekord;
 import pl.javastart.task.podatki.FormaOpodatkowania;
-
 import java.util.Arrays;
 
 public class Firma {
@@ -12,8 +12,8 @@ public class Firma {
     private final FormaOpodatkowania formaOpodatkowania;
     private int indexP = 0;
     private int indexW = 0;
-    private Koszt[] koszty = new Koszt[100];
-    private Przychod[] przychody = new Przychod[100];
+    private Rekord[] koszty = new Rekord[100];
+    private Rekord[] przychody = new Rekord[100];
 
     public Firma(String nazwa, FormaOpodatkowania formaOpodatkowania) {
         this.nazwa = nazwa;
@@ -36,7 +36,7 @@ public class Firma {
 
     private double zsumujWydatki() {
         double suma = 0;
-        for (Koszt koszt : koszty) {
+        for (Rekord koszt : koszty) {
             if (koszt == null) {
                 break;
             }
@@ -47,7 +47,7 @@ public class Firma {
 
     private double zsumujPrzychody() {
         double suma = 0;
-        for (Przychod przych : przychody) {
+        for (Rekord przych : przychody) {
             if (przych == null) {
                 break;
             }

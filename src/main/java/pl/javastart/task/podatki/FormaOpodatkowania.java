@@ -1,7 +1,5 @@
 package pl.javastart.task.podatki;
 
-import pl.javastart.task.firma.Firma;
-
 public class FormaOpodatkowania {
     private String nazwa;
 

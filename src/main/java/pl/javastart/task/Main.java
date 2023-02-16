@@ -14,10 +14,11 @@ public class Main {
         firma.wyswietlPodsumowanie();
 
         Firma firma1 = new Firma("Fuszerka", new NaCzarno());
+
         firma1.dodajPrzychod("Remont Mieszkania", 23_000);
         firma1.dodajWydatek("Piwko", 100);
         firma1.dodajWydatek("Walki, pedzle, szpachelki", 1_500);
-        firma.wyswietlPodsumowanie();
+        firma1.wyswietlPodsumowanie();
 
         Firma firma2 = new Firma("PolKom", new PodatekLiniowy());
         firma2.dodajPrzychod("Remont Mieszkania", 20_000);
@@ -27,7 +28,7 @@ public class Main {
 
         firma.wyswietlPodsumowanie();
         Firma janNowakServices = new Firma("Jan Nowak IT Services", new SkalaPodatkowa());
-        janNowakServices.dodajPrzychod("Programowanie", 150_000);
+        janNowakServices.dodajPrzychod("Programowanie", 40_000);
         janNowakServices.dodajWydatek("Energetyki", 20_000);
         janNowakServices.wyswietlPodsumowanie();
     }
